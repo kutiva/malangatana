@@ -1,0 +1,97 @@
+/* 
+  *Author:Jose Machava <jose.s.machava@gmail.com>
+  *Author URI: http://josemachava.com
+  *Description:Malangatana
+  *Copyrigth:2018 (c)
+s
+ */
+
+@import "cards.scss";
+
+$black:black;
+$white:white;
+$base:whitesmoke;
+
+
+body{
+  background-color: $base;
+  margin:0;
+  padding: 0;
+}
+.flexbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sign{
+  @extend .flexbox;
+  flex-direction:row;
+  form{
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    align-self: center;
+    img{
+      display: block;
+      margin: 0 auto;
+      width:80px;
+    }
+
+    input{
+     height: 44px;
+     margin: 10px;
+     box-sizing: border-box;
+     padding-left: 15px;
+     padding-right: s15px;
+     border: 1px solid #dbe2e8;
+     font-size: 14px;
+     box-shadow: 0 2px 2px 0 rgba(46,60,73,.05);
+     border-radius: 2px;
+     color: #2e3d49;
+    }
+  }
+
+}
+
+
+.menu{
+    @extend .flexbox;
+    background-color:white;
+    justify-content: space-between;
+
+}
+.nav{
+    @extend .flexbox;
+    justify-content: space-between;
+    li{
+      list-style-type: none;
+      li a{
+        text-decoration: none;
+        
+      }
+    }
+}
+
+
+.footer{
+  
+
+}
+
+
+.unstyledList{
+   list-style-type:none;
+   text-transform: capitalize;
+}
+.unstyledLink{
+  text-decoration: none;
+  color: black;
+  
+  :hover{
+    color:black;
+  }
+}

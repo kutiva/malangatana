@@ -1,0 +1,52 @@
+/* 
+  *Author:Jose Machava <jose.s.machava@gmail.com>
+  *Author URI: http://josemachava.com
+  *Description:Malangatana
+  *Copyrigth:2018 (c)
+
+ */
+body {
+  background-color: whitesmoke; }
+
+.flexbox, .sign, .articlesColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.sign {
+  flex-direction: row; }
+  .sign form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    align-self: center; }
+    .sign form img {
+      display: block;
+      margin: 0 auto;
+      width: 80px; }
+    .sign form input {
+      height: 44px;
+      margin: 10px;
+      box-sizing: border-box;
+      padding-left: 15px;
+      padding-right: s15px;
+      border: 1px solid #dbe2e8;
+      font-size: 14px;
+      box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
+      border-radius: 2px;
+      color: #2e3d49; }
+
+.articlesColumn {
+  flex-direction: column;
+  justify-content: space-between; }
+  .articlesColumn .article {
+    margin: 10px;
+    width: 50vw;
+    height: 250px;
+    background-color: white; }
+  .articlesColumn .articleTitle {
+    align-content: flex-start; }
